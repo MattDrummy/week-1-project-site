@@ -64,6 +64,10 @@ header {
   color: #eaeaed;
 }
 
+header ul {
+  position: absolute;
+}
+
 h1, h2 {
   margin-left: 20%;
   letter-spacing: 2px;
@@ -88,6 +92,7 @@ h2 {
   padding: 0 4px;
   background-color: gray;
   color: purple;
+  position: relative;
 }
 
 /* Footer */
