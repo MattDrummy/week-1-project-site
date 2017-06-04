@@ -1,7 +1,7 @@
 /* Body */
 
 body {
-  font-family: "Helvetica neue" Helvetica Arial sans-serif;
+  font: 1em "Helvetica neue" Helvetica Arial sans-serif;
 }
 
 /* Grid */
@@ -64,37 +64,63 @@ header {
   color: #eaeaed;
 }
 
-header ul {
-  position: absolute;
-}
-
 h1, h2 {
   margin-left: 20%;
   letter-spacing: 2px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
+  font-family: cursive;
+  text-decoration: underline;
+  padding-top: 10%;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 1em;
+  margin-top: 0;
 }
+
+.nav-primary {
+  text-align: right;
+}
+
 .nav-links {
-  text-align: center;
-  background-color: black;
+  display: inline-block;
+  position: relative;
+  padding: 12px;
+  border: 2px solid black;
+  background-color: #222
 }
 .nav-links a {
   display: inline;
   font-size: 1.5em;
   text-decoration: none;
-  border: 1px solid black;
-  padding: 0 4px;
-  background-color: gray;
   color: purple;
-  position: relative;
+
 }
 
+.nav-links ul {
+  position: absolute;
+  list-style-type: none;
+  width: inherit;
+  padding: 0px 6px 6px 6px;
+  background-color: #222;
+  border: 2px solid black;
+  visibility: hidden;
+  transition: 300ms ease;
+  left: -3px;
+}
+
+.nav-links li {
+  padding: 6px;
+}
+
+.nav-links:hover ul {
+  visibility: visible;
+  transition: 300ms ease;
+}
 /* Footer */
 
 footer {
@@ -120,10 +146,8 @@ small {
 }
 
 .tex-box a {
-  display: flex;
-  align-items: flex-end;
-  vertical-align: bottom;
-  justify-content: flex-end;
+  display: block;
+  text-align: right;
 }
 .tex-box h3 {
   text-align: center;
